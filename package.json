@@ -1,0 +1,42 @@
+{
+  "name": "data2sqlite",
+  "version": "0.1.0",
+  "description": "A tool to insert data into SQLite databases from XML and other file types",
+  "keywords": [
+    "cli",
+    "data",
+    "xml",
+    "sqlite",
+    "converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cinnabar-forge/data2sqlite.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Timur Moziev",
+    "email": "timur.moziev@gmail.com",
+    "url": "https://timurrin.github.io"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "data2sqlite": "bin/data2sqlite.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "format": "npx prettier . --write",
+    "lint": "npx eslint --fix ."
+  },
+  "dependencies": {
+    "@cinnabar-forge/cf-sqlite3": "0.2.2",
+    "xml2js": "0.6.2"
+  },
+  "devDependencies": {
+    "@cinnabar-forge/eslint-plugin": "0.4.0"
+  }
+}
